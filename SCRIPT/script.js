@@ -112,6 +112,75 @@ console.log(undefined/masAnios); //NaN
 console.log(null*masAnios); //0
 
 
+// ---------------------------------------------------- //
 
+parrafo=document.getElementById("parrafo");
+parrafo.innerHTML="Pueba de JavaScript";
+// Lectura del documento...
+parrafo.innerHTML="";
+
+// Llamar a algun elemento anterior, ej parrafo (querySelector)
+// parrafo=document.querySelector("parrafo");
+cuadrado=document.querySelector(".cuadrado");
+titulo=document.querySelector("h1");
+
+
+cuadrado.innerHTML="A";
+
+document.write("Es una prueba document.write");
+
+
+//      Variables       //
+var edad=25;
+var edad2="veinte y cinco"
+
+let email="j@gmail.com";
+document.write("<p>"+email+"<\p>");
+document.write("<p>"+edad+"<\p>");
+document.write("<p>"+edad2+"<\p>");
+
+
+//      Ambito de bloque        //
+document.write("<br>******************************")
+var mensaje1="<br>Mensaje 1"; //Declaramos nuestro mensaje.
+function mostrarMensaje2(){ //Funcion que esta actuando como un bloque.
+    //      Let     //
+    let mensaje="<br>Mensaje dentro del bloque."; //Cambiamos el contenido de la variable.
+    document.write(mensaje1); //Se sobre escribe
+}
+mostrarMensaje2(); //Mostramos el mensaje que devuelve la función.
+document.write("<br>Mensaje fuera del bloque -> " + mensaje1) //Mensaje original.
+
+
+//      Constantes      //
+// Su valor nunca cambia.
+const IVA=21;
+let precio=50*((21/100)+1);
+document.write("<br>El precio final es -> " + precio + "€");
+
+
+//      Salida de Mensaje por Consola       //
+console.error("Aquí hay un error");
+console.info("Es una información");
+console.warn("Esto es una advertencia");
+console.log("\x1b[41m\x1b colores en la consola]")
+
+//      Salida de mensaje       //
+document.write("prueba...prueba...prueba!!!");
+
+
+//      Mensajes de Confirmación        //
+let confirmacion=confirm("¿Quieres salir de la prueba?");
+document.write(`<br>¿El usurario quiere salir?->${confirmacion}`);
+if(confirmacion){
+    window.location.replace("https://google.es")
+}else{
+    alert("Te quedas aquí")
+}
+
+
+//      Mensaje de Entrada de Datos     //
+nombre=prompt("Escribe tu nombre");
+document.write(`<br>¿Cuál es tu nombre?->${nombre}`);
 
 
