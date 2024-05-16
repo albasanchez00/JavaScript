@@ -9,15 +9,15 @@ document.write("prueba...prueba...prueba!!!");
 
 
 //      Mensajes de Confirmación        //
-let confirmacion=confirm("¿Quieres salir de la prueba?");
+let confirmacion = confirm("¿Quieres salir de la prueba?");
 document.write(`<br>¿El usurario quiere salir?->${confirmacion}`);
-if(confirmacion){
+if (confirmacion) {
     window.location.replace("https://google.es")
-}else{
+} else {
     alert("Te quedas aquí")
 }
 
 
 //      Mensaje de Entrada de Datos     //
-nombre=prompt("Escribe tu nombre");
+nombre = prompt("Escribe tu nombre");
 document.write(`<br>¿Cuál es tu nombre?->${nombre}`);
