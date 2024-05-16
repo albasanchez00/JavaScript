@@ -114,17 +114,23 @@ console.log(null*masAnios); //0
 
 // ---------------------------------------------------- //
 
+
 parrafo=document.getElementById("parrafo");
+// cuadrado=document.querySelectorAll("p");   //Arrays
 parrafo.innerHTML="Pueba de JavaScript";
 // Lectura del documento...
 parrafo.innerHTML="";
 
 // Llamar a algun elemento anterior, ej parrafo (querySelector)
 // parrafo=document.querySelector("parrafo");
-cuadrado=document.querySelector(".cuadrado");
-titulo=document.querySelector("h1");
+cuadrado=document.querySelector(".cuadrado");   //Clase
+// cuadrado=document.querySelector("#cuadrado");   //Id -> solo el primero cuando existan varios
+cuadrado=document.querySelector("p");   //Etiqueta
 
+// parrafo=document.querySelector("#parrafo");
+titulo=document.querySelector("h1");    //Id
 
+// titulo.innerHTML("Práctica de JavaScript");
 cuadrado.innerHTML="A";
 
 document.write("Es una prueba document.write");
@@ -159,28 +165,105 @@ let precio=50*((21/100)+1);
 document.write("<br>El precio final es -> " + precio + "€");
 
 
-//      Salida de Mensaje por Consola       //
-console.error("Aquí hay un error");
-console.info("Es una información");
-console.warn("Esto es una advertencia");
-console.log("\x1b[41m\x1b colores en la consola]")
 
-//      Salida de mensaje       //
-document.write("prueba...prueba...prueba!!!");
+// Operadores
+// 1. Asignación.
+let a=5;
+let b=a;
+console.log("El valor de b es: " + b);
+
+// let c=a+b; //una suma y se le asigna el valor a la variable c
+//c=a+b -> c=5+5 
+// Forma simplificada:
+a=a+b; //de forma simplificada
+// a=5+5 Resultado 10.
+console.log("valor del primer a-> " +a); //El resultado es -> 10
+
+a+=b; //El valor de a se le suma otra vez a su valor + el valor de b.
+//a+=b  ->  10+=5 Resultado 15.
+console.log("valor del segundo a-> " +a); //El resultado es -> 10
+let c=a%b;
+
+let d=b**4;
+console.log("El valor de d es-> " +d);
 
 
-//      Mensajes de Confirmación        //
-let confirmacion=confirm("¿Quieres salir de la prueba?");
-document.write(`<br>¿El usurario quiere salir?->${confirmacion}`);
-if(confirmacion){
-    window.location.replace("https://google.es")
-}else{
-    alert("Te quedas aquí")
-}
+// Operadores de Comparación -> Solo devuelven dos valores (true/false)
+// Igual
+let respuesta=a==b
+console.log(respuesta);
+
+// Distinto
+respuesta=a!=b;
+console.log(respuesta);
+
+// Igualdad Estricta.
+let e="5"; //String
+respuesta=b==e;
+console.log(respuesta);
+// En el caso de igualdad estricta resulta falso porque b es number y e es string
+respuesta=b==e;
+console.log(respuesta);
 
 
-//      Mensaje de Entrada de Datos     //
-nombre=prompt("Escribe tu nombre");
-document.write(`<br>¿Cuál es tu nombre?->${nombre}`);
+// Desilgualdad Estricta
+respuesta=b!==e;
+console.log(respuesta);
 
+
+// Mayor | Menor | Mayor o Igual | Menor o Igual
+respuesta=a>b; //true 
+respuesta=c<b; //true
+respuesta=b>=e; //
+console.log(respuesta);
+
+
+// Operadores Aritméticos
+// Incremento
+a++; //a vale 16 -> a=a+1
+console.log("Ahora a vale -> " +a);
+
+// Decremento
+a--;
+console.log("Ahora a vale -> " +a);
+a-=3;
+console.log("Ahora a vale -> " +a);
+
+
+//Operadores Lógicos
+console.log(`Operaciones con AND`);
+console.log(`1. => ${true&&true}`);
+console.log(`3. => ${true&&false}`);
+console.log(`4. => ${false&&true}`);
+console.log(`5. => ${false&&false}`);
+// Evaluamos condiciones
+console.log(`6. => ${4>5&&3>5}`);
+console.log(`7. => ${4<=5&&3<=5}`);
+
+
+console.log("Operadoiones con OR");
+console.log(`1. => ${true||true}`);
+console.log(`3. => ${true||false}`);
+console.log(`4. => ${false||true}`);
+console.log(`5. => ${false||false}`);   
+
+
+console.log("Operadoiones con NOT");
+console.log(`1. => ${!true}`);
+console.log(`3. => ${!false}`);
+
+
+// Ejemplo Práctico:
+let edad3=18;
+let matriculado=true; //Si fuese false el resultado seria false
+// AND
+resultado=matriculado&&edad3; 
+console.log(resultado); //18
+// OR
+resultado=matriculado||edad3; 
+console.log(resultado); //true
+
+// Operador Ternario
+resultado=a>b?"A es mayor que B":"B es mayor que A";
+console.log(resultado);
 
