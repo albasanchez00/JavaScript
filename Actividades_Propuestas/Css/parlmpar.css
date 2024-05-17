@@ -1,0 +1,87 @@
+.bloque_Formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloque_Formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.titulo{}
+
+.contenido_Formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1100px;
+    height: 300px;
+}
+
+.contenido_Txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    width: 500px;
+    height: 300px;
+}
+
+.texto {
+    width: 200px;
+    height: 50px;
+}
+.texto2 {
+    width: 300px;
+    height: 50px;
+}
+
+.input {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 200px;
+    height: 50px;
+
+}
+.boton{
+    width: 200px;
+    height: 50px;
+
+}
+button {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+}
+
+.contenido_Imagen {
+    margin: 15px;
+    width: 500px;
+    height: 300px;
+
+}
+
+.contenido_Imagen img {
+    width: 500px;
+    height: 300px;
+}
+
+
+.mensajeError {
+    color: darkred;
+}
+
+.espaciado{
+    padding-top: 15px;
+}

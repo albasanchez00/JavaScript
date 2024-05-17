@@ -68,9 +68,47 @@ body {
 }
 
 .contenido_Formulario{
-    width: 500px;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 500px;
 }
-.contenido_Formulario div{
-  
+.contenido_Txt{
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    width: 300px;
+    height: 300px;
+}
+.espacio{
+
+}
+.input{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 200px;
+    height: 50px;
+
+}
+button{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+}
+
+.contenido_Imagen{
+  width: 200px;
+  height: 200px;  
+}
+.contenido_Imagen img{
+width: 200px;
+  height: 200px;
+}
+
+
+.mensajeError{
+    color: darkred;
 }
