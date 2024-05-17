@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu",  sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.66%
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.33%;
+}
+.col-5{
+    width: 41.66%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.33%;
+}
+.col-8{
+    width: 66.66%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.33% ;
+}
+.col-11{
+    width: 91.66%;
+}
+.col-12{
+     width: 100%;
+ }
+
+
+@media only screen and (width<=768px){
+    [class*="col-"]{
+        width: 100%;
+    }
+    .contenedor{
+        flex-direction: column;
+    }
+    .col-img-4{
+        max-width: 33.33%;
+    }
+}
+/* ********************************************** */
+
+.bloque_Principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.contenedor_Img{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-style: none;
+}
+.contenedor_Titulo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+}
+.contenedor_Titulo h1{
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+.contenedor_Titulo h2{
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}

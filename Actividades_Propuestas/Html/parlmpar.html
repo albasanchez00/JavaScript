@@ -16,19 +16,21 @@
         </div>
         <div class="contenido_Formulario">
             <picture class="contenido_Imagen">
-                <img src="../fondo-numeros.jpg" alt="Holi Festival">
+                <img src="../img/fondo-numeros.jpg">
             </picture>
             <div class="contenido_Txt">
-                <div class="texto2 col-6">
-                    <label for="numero">Indica el número</label>
+                <div class="contenedor_Txt">
+                    <div class="texto2 col-6">
+                        <label for="numero">Indica el número</label>
+                    </div>
+                    <div class="texto col-6">
+                        <input class="input" type="text" id="numero" name="numero" class="col-8">
+                    </div>
+                    <div class="espaciado boton col-6">
+                        <button>Enviar</button>
+                    </div>
                 </div>
-                <div class="texto col-6">
-                    <input class="input" type="text" id="numero" name="numero" class="col-8">
-                </div>
-                <div class="espaciado boton col-6">
-                    <button>Enviar</button>
-                </div>
-                <div class="espaciado contenido_Mensaje">
+                <div class="mensaje_Texto espaciado contenido_Mensaje">
                     <p class="mensaje"></p>
                     <p class="mensajeError"></p>
                 </div>

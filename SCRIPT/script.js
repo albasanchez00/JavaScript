@@ -298,3 +298,7 @@ if(local===visitante){
 } else{
     console.log("Gana el equipo visitante");
 }
+
+
+let imagen=document.querySelector("#imagen")
+imagen.src="../img/paisaje.jpg"
