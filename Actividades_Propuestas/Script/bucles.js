@@ -22,12 +22,32 @@
 
 
 // Random o aleatorio -> Devolvera un numero aleatorio entre los valores que le indiquemos (Ej: entre 1 y 100)
-let abecedario="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ" //abecedario guarda todas las letras que van con índice desde el 0=A hasta 26=Z 
-//Utilizamos parseInt para convertir el número en entero.
-let numeroAleatorio=parseInt(Math.random()*26); //Número aleatorio
-console.log(abecedario[numeroAleatorio]);
+// let abecedario="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ" //abecedario guarda todas las letras que van con índice desde el 0=A hasta 26=Z 
+// //Utilizamos parseInt para convertir el número en entero.
+// let numeroAleatorio=parseInt(Math.random()*26); //Número aleatorio
+// console.log(abecedario[numeroAleatorio]);
 
-letra="";
-while (letra!=abecedario[numeroAleatorio]) {
-    letra=prompt("Indica una letra").toUpperCase();    
-} alert("¡Adivinaste! Es la letra -> " + abecedario[numeroAleatorio]);
+// letra="";
+// while (letra!=abecedario[numeroAleatorio]) {
+//     letra=prompt("Indica una letra").toUpperCase();    
+// } alert("¡Adivinaste! Es la letra -> " + abecedario[numeroAleatorio]);
+
+
+// let contador=0; 
+// let numero=1;
+// while (numero%2==0) {
+//     console.log(par);
+//     console.log();
+//     console.log();
+// }
+
+
+/*  Bucle For   */
+// Tablas de multiplicar
+console.log("***BUCLE FOR***");
+for (let x = 1; x < 10; x++) { //1
+    for (let y = 1; y < 10; y++) { //1, 2, 3, 4.....llega a 9 y se sale
+        console.log(x+"x"+y+"="+(x*y));
+    }
+    
+}

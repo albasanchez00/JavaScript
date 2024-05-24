@@ -1,11 +1,9 @@
-// 1. Declaracion variable
-// 2. while(letra)
-// 3. promp indica la letra
+/*  Actividad propuesta 2.11  */
 let letra = "";
 
 do {
-    alert("Has adivinado la letra");
-} while (letra != "s") {
-    letra = prompt("Indique una letra.").toLowerCase();
-}
+    letra=prompt("Introduzca un letra");
+} while (letra != "s");
+
+alert("Enhorabuena, has acertado");
 
